@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/personalinfo.css') }}">
+	</head>
+
+	<body>
+
+		<h1> SafeHearts </h1>
+		<form action="http://127.0.0.1:5000/results">
+			<label for="age">Please enter your age:</label>
+			<input type="text" id="agefield" name="age" maxlength="3"><br>
+			<label for="selectsex">Please specify your sex:</label>
+			<select name="selectsex" id="selectsex">
+				<option hidden selected>-Please select-</option>
+				<option value="0">Male</option>
+				<option value="1">Female</option>
+			</select> <br>
+			<label for="selectchest">Do you have chest pain? (0:none, 4:high):</label>
+			<select name="selectchest" id="selectchest">
+				<option hidden selected>-Please select-</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select> <br>
+			<label for="rbp">Please enter your resting blood pressure:</label>
+			<input type="text" id="rbp" name="rbp" maxlength="3"><br>
+			<label for="secho">Please enter your serum cholestoral in mg/dl:</label>
+			<input type="text" id="secho" name="secho" maxlength="3"><br>
+			<label for="fbs">Is your fasting blood sugar higher than 120 mg/dl?:</label>
+			<select name="fbs" id="fbs">
+				<option hidden selected>-Please select-</option>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</select> <br>
+			<label for="ecg">Which type were your resting electrocardiographic results?:</label>
+			<select name="ecg" id="ecg">
+				<option hidden selected>-Please select-</option>
+				<option value="0">Type 0</option>
+				<option value="1">Type 1</option>
+				<option value="2">Type 2</option>
+			</select> <br>
+			<label for="heartrate">Please specify maximum heart rate achieved:</label>
+			<input type="text" id="heartrate" name="heartrate" maxlength="3"><br>
+			<label for="angina">Do you suffer exercise induced angina?:</label>
+			<select name="angina" id="angina">
+				<option hidden selected>-Please select-</option>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</select> <br>
+			<label for="stseg">Please specify level of ST-segment depression induced by exercise relative to rest:</label>
+			<input type="text" id="stseg" name="stseg" maxlength="5"><br>
+			<label for="slope">Please specify the slope of peak ST-segment exercise:</label>
+			<select name="slope" id="slope">
+				<option hidden selected>-Please select-</option>
+				<option value="0">Slope 0</option>
+				<option value="1">Slope 1</option>
+				<option value="2">Slope 2</option>
+			</select> <br>
+			<label for="vessel">Enter number of major vessels (0-3) colored by flourosopy:</label>
+			<select name="vessel" id="vessel">
+				<option hidden selected>-Please select-</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select> <br>
+			<label for="thalassemia">Enter level of thalassemia if exists:</label>
+			<select name="thalassemia" id="thalassemia">
+				<option hidden selected>-Please select-</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select> <br>
+			<br>
+			<input type="submit" id="startbutton" value="Go to the next page"/>
+		</form>
+		
+		
+
+	</body>
+</html>

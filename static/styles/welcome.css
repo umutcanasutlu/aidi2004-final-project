@@ -1,0 +1,40 @@
+body {
+	background-color: #D62728;
+	color: #dddddd;
+	text-align: center;
+}
+
+h1{
+	color: #ffffff;
+	font-size: 86px;
+}
+
+h2{
+	margin-top: 80px;
+	color: #ffffff;
+	font-size: 56px;
+	
+}
+
+p{
+	font-size: 30px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+#startbutton{
+	border-color: #eeeeee;
+	background:transparent;
+	margin-top:20px;
+	font-size: 32px;
+	color:#eeeeee;
+}
+
+#message{
+	margin-top: -20px;
+	font-size: 24px;
+
+}
+#credit{
+	text-align:left;
+}
