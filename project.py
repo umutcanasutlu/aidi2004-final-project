@@ -24,7 +24,7 @@ input_vitals = X_train.iloc[0]
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 model_knn = 'K-NeighborsClassifier'
-knn = KNeighborsClassifier(n_neighbors=19)
+knn = KNeighborsClassifier(n_neighbors=10)
 knn.fit(X_train, y_train)
 knn_predicted = knn.predict(X_test)
 knn_conf_matrix = confusion_matrix(y_test, knn_predicted)
