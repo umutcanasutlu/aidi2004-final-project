@@ -7,7 +7,6 @@ Created on Sun Mar 21 13:58:21 2021
 
 from flask import Flask, request, render_template
 import pandas as pd
-from app import app
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
