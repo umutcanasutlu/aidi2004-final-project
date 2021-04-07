@@ -1,4 +1,7 @@
 Flask==1.1.2
 Flask-SQLAlchemy==2.5.1
+Cython==0.29.14
+cytoolz==0.10.1
 sklearn==0.0
-pandas==0.24.2
+numpy==1.18.0
+joblib>=0.14
